@@ -1,26 +1,9 @@
 <div align="center">
-
-# Physics Demonstration in 2D Games
+  
+## Coloring Polygon
 
 </div>
 
-In MENU move around with arrow, press ENTER to select, press BACKSPACE to return
-
-## Getting started
-> [!WARNING]
-> To run this project, CMake needs to be installed <br>
-> On Windows use Git interpreter to run script<br>
-
-```bash
-git clone https://github.com/Gabrax/2DPhysicsExamples.git
-```
-
-```bash
-sh build.sh
-```
-
----
-## Coloring Polygon
 https://github.com/user-attachments/assets/1f3f6bb5-1ec1-4e1b-9615-04a49c23a109
 
 ### Circle-Polygon Edge
@@ -46,65 +29,12 @@ where:
 - $$\( \mathbf{v} \)$$ is the original velocity,
 - $$\( \mathbf{n} \)$$ is the collision normal.
 
-### Polygon Rotation (2D Rotation Formula)
-Each vertex is rotated around the polygon's center using:
-
-$$
-x' = x \cos(\theta) - y \sin(\theta)
-$$
-$$
-y' = x \sin(\theta) + y \cos(\theta)
-$$
-
-where:
-- $$\( (x, y) \)$$ is the original vertex position relative to the center,
-- $$\( (x', y') \)$$ is the rotated position,
-- $$\( \theta \)$$ is the rotation angle.
-
-### Polygon Area (Shoelace Formula)
-The area of a polygon is computed as:
-
-$$
-A = \frac{1}{2} \left| \sum_{i=0}^{n-1} (x_i y_{i+1} - y_i x_{i+1}) \right|
-$$
-
-where:
-- $$\( (x_i, y_i) \)$$ are the polygon vertices, and
-- the last vertex wraps around with $$\( x_n = x_0, y_n = y_0 \)$$.
-
-### Point-In-Polygon (Ray-Casting Algorithm)
-A point is inside a polygon if the number of times a ray from the point crosses an edge is odd:
-
-$$
-\text{inside} = (\text{crossings} \mod 2) = 1
-$$
-
-where "crossings" is the number of times a horizontal ray from the point intersects the polygon edges.
-
-### Motion Update (Euler Integration)
-The position update per frame is:
-
-$$
-\mathbf{p} = \mathbf{p} + \mathbf{v} \cdot dt
-$$
-
-where:
-- $$\( \mathbf{p} \)$$ is the position,
-- $$\( \mathbf{v} \)$$ is the velocity,
-- $$\( dt \)$$ is the time step (assumed $$\( dt = 1 \)$$ per frame).
-
-### Pixel-Based Area Calculation (Image Sampling)
-The proportion of colored pixels in an image is:
-
-$$
-\text{colored percentage} = \left( \frac{\text{colored pixels}}{\text{polygon pixels}} \right) \times 100
-$$
-
-where "colored pixels" are those matching a target color (e.g., yellow).
-
----
-
+<div align="center">
+  
 ## Collision Detection
+
+</div>
+  
 https://github.com/user-attachments/assets/5e854fc3-9daa-48ff-b31f-2f47f369edc2
 
 ### Quadratic Equation
@@ -192,8 +122,11 @@ $$
 
 where $$\( \mathbf{n} \)$$ is the normalized collision normal.
 
----
+<div align="center">
+  
 ## Central Force Fields
+
+</div>
 
 https://github.com/user-attachments/assets/40cb0256-9d07-4a64-b05a-5697e693f866
 
@@ -301,8 +234,17 @@ $$
 
 where $$\( r \)$$ is the initial separation between the two bodies.
 
----
+<div align="center">
+  
+## Dependencies
 
-## 👨‍💻 Tech stack
-- [Raylib](https://www.raylib.com)
+</div>
+
+<div align="center">
+
+<p>
+<a href="https://www.raylib.com">raylib</a>
+</p>
+
+</div>
 
