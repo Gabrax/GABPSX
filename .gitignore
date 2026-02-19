@@ -1,0 +1,10 @@
+/out
+bin/
+build/
+Dist/
+/.vs
+.idea/
+Makefile
+.vscode/
+*.exe
+*.dll
