@@ -8,3 +8,5 @@ Makefile
 .vscode/
 *.exe
 *.dll
+rel/
+rel-deb/
